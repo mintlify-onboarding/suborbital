@@ -2,9 +2,9 @@
 title: "Use SE2's APIs from Go"
 ---
 
-info
-
+<Note>
 You can find a detailed specification of SE2's APIs [here](https://reference.suborbital.dev/).
+</Note>
 
 The [se2-go library](https://github.com/suborbital/se2-go) helps you easily interact with SE2's APIs from your Go application. SE2 is designed to run alongside your application in a Kubernetes or Docker Compose environment.
 
@@ -25,9 +25,8 @@ go get github.com/suborbital/se2-go@latest
 
 This example sets up a basic client with the [token generated in Subo](/open-source/subo.md) or with the web app. The `se2.Client` object created here assumes that SE2 is running on the same host on its default ports. Head on over to the [se2-go repository on GitHub](https://github.com/suborbital/se2-go/blob/main/examples) to try out this code and see more examples.
 
-client.go
 
-```
+```go client.go
 package main
 
 import (
@@ -51,9 +50,7 @@ We can now integrate SE2 into an application. `se2-go` has access to all of SE2'
 
 Behind the scenes, `se2-go` manages authentication, so you don't have to worry about setting the right HTTP headers when interacting with the SE2 API.
 
-main.go
-
-```
+```go main.go
 package main
 
 import (

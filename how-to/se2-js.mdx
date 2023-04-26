@@ -2,9 +2,10 @@
 title: "Use SE2's APIs from JS/TS"
 ---
 
-info
 
+<Note>
 You can find a detailed specification of SE2's APIs [here](https://reference.suborbital.dev/).
+</Note>
 
 Use [our JavaScript SDK](https://github.com/suborbital/se2-node) to easily interact with SE2's APIs using JavaScript or TypeScript.
 
@@ -78,7 +79,7 @@ async function listAvailablePlugins() {
 
 ## Example output[](#example-output "Direct link to heading")
 
-```
+```js
 {
     "plugins": [
         {
@@ -123,11 +124,11 @@ These are all of the available methods.
 
 #### `suborbital.admin.getToken`[](#suborbitaladmingettoken "Direct link to heading")
 
-**Description**: Retrieves an authentication token for the given plugin, typically used to authenticate calls to the Builder API.**Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`.**Result:** A string containing the token used for authorization.
+**Description**: Retrieves an authentication token for the given plugin, typically used to authenticate calls to the Builder API. **Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`. **Result:** A string containing the token used for authorization.
 
 #### `suborbital.admin.getPlugins`[](#suborbitaladmingetplugins "Direct link to heading")
 
-**Description:** Returns a list of available plugins for the given user in the given namespace.**Args:** An object containing `userId`, `namespace`.**Result:**
+**Description:** Returns a list of available plugins for the given user in the given namespace. **Args:** An object containing `userId`, `namespace`. **Result:**
 
 ```
 {
@@ -149,7 +150,7 @@ These are all of the available methods.
 
 #### `suborbital.admin.getExecutionResult`[](#suborbitaladmingetexecutionresult "Direct link to heading")
 
-**Description:** Returns the most recent results (up to 5) produced by the execution of the given plugin.**Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `version`.**Result:**
+**Description:** Returns the most recent results (up to 5) produced by the execution of the given plugin. **Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `version`. **Result:**
 
 ```
 {
@@ -168,29 +169,29 @@ These are all of the available methods.
 
 #### `suborbital.exec.run`[](#suborbitalexecrun "Direct link to heading")
 
-**Description:** Executes the given plugin, with the provided body, params and state loaded into the extension at runtime.**Args:** An object containing `environment`,`userId`,`namespace`, `pluginName`,`version`.**Result:** The result of the executed plugin.
+**Description:** Executes the given plugin, with the provided body, params and state loaded into the extension at runtime. **Args:** An object containing `environment`,`userId`,`namespace`, `pluginName`,`version`. **Result:** The result of the executed plugin.
 
 ### Builder[](#builder "Direct link to heading")
 
 #### `suborbital.builder.build`[](#suborbitalbuilderbuild "Direct link to heading")
 
-**Description:** Builds the provided code using the specified language toolchain.**Args:** An object containing `language`, `environment`, `userId`, `namespace`, `pluginName`, `token`.**Result:** A string containing the logs for the build.
+**Description:** Builds the provided code using the specified language toolchain. **Args:** An object containing `language`, `environment`, `userId`, `namespace`, `pluginName`, `token`. **Result:** A string containing the logs for the build.
 
 #### `suborbital.builder.getDraft`[](#suborbitalbuildergetdraft "Direct link to heading")
 
-**Description:** Gets the draft for the specified runnable.**Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `token`.**Result:** A specified runnable.
+**Description:** Gets the draft for the specified runnable. **Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `token`. **Result:** A specified runnable.
 
 #### `suborbital.builder.deployDraft`[](#suborbitalbuilderdeploydraft "Direct link to heading")
 
-**Description:** Deploys the specified runnable.**Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `token`.**Result:** A string containing the version.
+**Description:** Deploys the specified runnable. **Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `token`. **Result:** A string containing the version.
 
 #### `suborbital.builder.testDraft`[](#suborbitalbuildertestdraft "Direct link to heading")
 
-**Description:** Tests the draft for the specified runnable.**Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`.**Result:** A string containing the result.
+**Description:** Tests the draft for the specified runnable. **Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`. **Result:** A string containing the result.
 
 #### `suborbital.builder.getTemplate`[](#suborbitalbuildergettemplate "Direct link to heading")
 
-**Description:** Gets the template (which controls what your users see when they create a new plugin) for a new extension of the given language.**Args:** An object containing `pluginName`, `language`.**Result:**
+**Description:** Gets the template (which controls what your users see when they create a new plugin) for a new extension of the given language. **Args:** An object containing `pluginName`, `language`. **Result:**
 
 ```
 import { logInfo } from "@suborbital/suborbital"

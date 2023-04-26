@@ -61,8 +61,8 @@
     {
       "group": "Reference", 
       "pages": [
-        "language-support", 
-        "glossary"
+        "reference/language-support", 
+        "reference/glossary"
       ]
     },
     {
