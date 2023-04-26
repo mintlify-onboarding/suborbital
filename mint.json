@@ -32,6 +32,16 @@
       "url": "https://reference.suborbital.dev/administrative/get-token"
     },
     {
+      "name": "Go client library reference", 
+      "icon": "rectangle-code", 
+      "url": "https://github.com/suborbital/se2-go"
+    }, 
+    {
+      "name": "JS/TS client library reference", 
+      "icon": "code", 
+      "url": "https://github.com/suborbital/se2-node"
+    },
+    {
       "name": "Github",
       "icon": "github",
       "url": "https://github.com/suborbital"
