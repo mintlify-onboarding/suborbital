@@ -7,59 +7,80 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0069ED",
-    "light": "#4D9CFF",
-    "dark": "#0050B4"
+    "primary": "#12A7D3",
+    "light": "#7FD7EA",
+    "dark": "#004E7A",
+    "anchors": {
+      "from": "#47CAE6",
+      "to": "#004E7A"
+    }
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "name": "Learn More",
+      "url": "https://suborbital.dev/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
+    "name": "Try for Free",
+    "url": "https://suborbital.network/"
   },
   "anchors": [
     {
       "name": "API Reference",
       "icon": "rectangle-terminal",
-      "url": "api-reference"
+      "url": "https://reference.suborbital.dev/administrative/get-token"
     },
     {
-      "name": "Changelog",
-      "icon": "list",
-      "url": "https://mintlify.com"
+      "name": "Github",
+      "icon": "github",
+      "url": "https://github.com/suborbital"
     },
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://mintlify.com/community"
+      "name": "Blog",
+      "icon": "pen-to-square",
+      "url": "https://blog.suborbital.dev/"
     }
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Getting Started with Suborbital",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "introduction",
+        "quickstart",
+        "subo"
+      ]
+    },
+    {
+      "group": "How-To",
+      "pages": [
+        "how-to/se2-go",
+        "how-to/se2-js"
+      ]
+    },
+    {
+      "group": "Reference", 
+      "pages": [
+        "language-support", 
+        "glossary"
+      ]
+    },
+    {
+      "group": "",
+      "pages": ["support"]
+    },
+    {
+      "group": "Open Source @ Suborbital",
+      "pages": [
+        "open-source/contributing-to-suborbital",
+      "open-source/e2-core/introduction"
       ]
     }
+
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "website": "https://suborbital.dev/",
+    "twitter": "https://twitter.com/SuborbitalDev",
+    "github": "https://github.com/suborbital"
   }
 }
