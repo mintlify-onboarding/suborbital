@@ -66,7 +66,35 @@
       "group": "How-To",
       "pages": [
         "how-to/se2-go",
-        "how-to/se2-js"
+        "how-to/se2-js",
+        {
+          "group": "Customize plugins", 
+          "pages": [
+            "how-to/plugins/editor",
+            "how-to/plugins/templates", 
+            "how-to/plugins/namespaces"
+          ]
+        },
+        {
+          "group": "Deploy SE2", 
+          "pages": [
+            {
+              "group": "Cloud Deployment", 
+              "pages": [
+                "how-to/deploy/cloud/capabilities", 
+                "how-to/deploy/cloud/storage", 
+                "how-to/deploy/cloud/webooks", 
+                "how-to/deploy/cloud/install"
+              ]
+            }, 
+            {
+              "group": "Other Deployments", 
+              "pages": [
+                "how-to/deploy/other/minikube"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
