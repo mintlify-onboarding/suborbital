@@ -26,7 +26,7 @@ A configuration for local development is also provided.
 
 By default, the client will point to the control plane and data plane within your Kubernetes cluster.
 
-```
+```javascript
 import { Suborbital } from "@suborbital/se2";
 
 const suborbital = new Suborbital();
@@ -37,7 +37,7 @@ const suborbital = new Suborbital();
 
 For local development with SE2 running in docker-compose, the local configuration will point to the services running on your local machine.
 
-```
+```javascript
 import { Suborbital, localConfig } from "@suborbital/se2";
 
 const suborbital = new Suborbital(localConfig);
@@ -46,7 +46,7 @@ const suborbital = new Suborbital(localConfig);
 
 ## Custom API URLs or ports[](#custom-api-urls-or-ports "Direct link to heading")
 
-```
+```javascript
 import { Suborbital } from "@suborbital/se2";
 
 const configuration = {
@@ -65,7 +65,7 @@ Using the [SE2 APIs](https://reference.suborbital.dev/), this guide will use the
 
 The Administrative APIs `getPlugins` method takes an object with a `userId` and a `namespace` and returns a list of available plugins for that user in the provided namespace.
 
-```
+```javascript
 async function listAvailablePlugins() {
     const plugins = await suborbital.admin.getPlugins({
         userId: "1234",
@@ -79,7 +79,7 @@ async function listAvailablePlugins() {
 
 ## Example output[](#example-output "Direct link to heading")
 
-```js
+```javascript
 {
     "plugins": [
         {
@@ -101,7 +101,7 @@ The result includes a plugin named `foo` (which for this tutorial already exists
 
 The `run` method takes an object with the `environment`, `userId`, `namespace`, `extName`, and `version`, and returns the result of the executed plugin.
 
-```
+```javascript
 async function runExtension() {
     const result = await suborbital.exec.run({
         environment: "com.acmeco",
@@ -130,7 +130,7 @@ These are all of the available methods.
 
 **Description:** Returns a list of available plugins for the given user in the given namespace. **Args:** An object containing `userId`, `namespace`. **Result:**
 
-```
+```javascript
 {
     "plugins": [
         {
@@ -152,7 +152,7 @@ These are all of the available methods.
 
 **Description:** Returns the most recent results (up to 5) produced by the execution of the given plugin. **Args:** An object containing `environment`, `userId`, `namespace`, `pluginName`, `version`. **Result:**
 
-```
+```javascript
 {
     "results": [
         {

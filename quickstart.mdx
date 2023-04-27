@@ -124,7 +124,7 @@ The SE2 plugin editor uses SE2's APIs from either [Go](/how-to/se2-go) or [JavaS
 
 In addition to the `IDENTIFIER` and `ENV_TOKEN`, you’ll also need to set `NAMESPACE` and `fn` to the name of our namespace (e.g. `default`) and the name of our plugin (e.g. `hello`). Copy the `token` field in the response; this is your editor token.
 
-```
+```bash
 curl --location --request GET "http://local.suborbital.network:8082/auth/v2/access/${IDENTIFIER}/${NAMESPACE}/${EXT}" \
 --header "Authorization: Bearer ${ENV_TOKEN}"
 
@@ -151,7 +151,7 @@ Altogether, it should look something like `https://editor.suborbital.network/?bu
 
 Paste the URL you created above into your browser to load the plugin editor. Once inside the editor, you can edit, build, test, and deploy your plugins all in one place! By default, the editor will load pre-populated with the greeting plugin below. You can use it to run the editor for the first time.
 
-```
+```javascript
 import { log } from "@suborbital/runnable";
 
 export const run = (input) => {
