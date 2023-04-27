@@ -83,7 +83,7 @@
               "pages": [
                 "how-to/deploy/cloud/capabilities", 
                 "how-to/deploy/cloud/storage", 
-                "how-to/deploy/cloud/webooks", 
+                "how-to/deploy/cloud/webhooks", 
                 "how-to/deploy/cloud/install"
               ]
             }, 
