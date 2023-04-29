@@ -28,21 +28,6 @@
   },
   "anchors": [
     {
-      "name": "API Reference",
-      "icon": "rectangle-terminal",
-      "url": "https://reference.suborbital.dev/administrative/get-token"
-    },
-    {
-      "name": "Go client library reference", 
-      "icon": "rectangle-code", 
-      "url": "https://github.com/suborbital/se2-go"
-    }, 
-    {
-      "name": "JS/TS client library reference", 
-      "icon": "code", 
-      "url": "https://github.com/suborbital/se2-node"
-    },
-    {
       "name": "Github",
       "icon": "github",
       "url": "https://github.com/suborbital"
@@ -51,11 +36,16 @@
       "name": "Blog",
       "icon": "pen-to-square",
       "url": "https://blog.suborbital.dev/"
+    },
+    {
+      "name": "Support",
+      "icon": "envelope",
+      "url": "mailto:team@suborbital.dev"
     }
   ],
   "navigation": [
     {
-      "group": "Getting Started with Suborbital",
+      "group": "Getting Started",
       "pages": [
         "introduction",
         "quickstart",
@@ -100,22 +90,20 @@
     {
       "group": "Reference", 
       "pages": [
+        "reference/api-reference",
+        "reference/go-client-library",
+        "reference/js-ts-client-library",
         "reference/language-support", 
         "reference/glossary"
       ]
     },
     {
-      "group": "",
-      "pages": ["support"]
-    },
-    {
       "group": "Open Source @ Suborbital",
       "pages": [
         "open-source/contributing-to-suborbital",
-      "open-source/e2-core/introduction"
+        "open-source/e2-core/introduction"
       ]
     }
-
   ],
   "footerSocials": {
     "website": "https://suborbital.dev/",
